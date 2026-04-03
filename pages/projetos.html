@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!--======================| Base |======================-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Certificações | Tiago Vieira</title>
+
+    <!--======================| SEO |======================-->
+    <meta
+      name="description"
+      content="Veja as certificações de Tiago Vieira, desenvolvedor full stack. Formação em tecnologia, cursos e qualificações voltadas ao desenvolvimento web e sistemas."
+    />
+    <meta name="author" content="Tiago Vieira" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://tiagovieira.dev.br/pages/certificacoes.html" />
+
+    <!--======================| SEO Estruturado |======================-->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Tiago Vieira",
+        "url": "https://tiagovieira.dev.br",
+        "jobTitle": "Desenvolvedor Full Stack",
+        "image": "https://tiagovieira.dev.br/assets/perfil.jpg",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Lages",
+          "addressRegion": "SC",
+          "addressCountry": "BR"
+        },
+        "sameAs": ["https://github.com/tiagovieira-dev", "https://www.linkedin.com/in/tiago-vieira-0540531aa/"]
+      }
+    </script>
+
+    <!--======================| Open Graph (Facebook/WhatsApp) |======================-->
+    <meta property="og:title" content="Certificações | Tiago Vieira" />
+    <meta property="og:description" content="Conheça minhas certificações e qualificações em desenvolvimento web, tecnologia e sistemas." />
+    <meta property="og:image" content="https://tiagovieira.dev.br/assets/preview-certificacoes.jpg" />
+    <meta property="og:url" content="https://tiagovieira.dev.br/pages/certificacoes.html" />
+    <meta property="og:type" content="website" />
+
+    <!--======================| Twitter Card |======================-->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Tiago Vieira | Desenvolvedor Full Stack" />
+    <meta name="twitter:description" content="Sites profissionais e sistemas web sob medida." />
+    <meta name="twitter:image" content="https://seudominio.com/img/preview.jpg" />
+
+    <!--======================| Tema Mobile |======================-->
+    <meta name="theme-color" content="#023F89" />
+
+    <!--======================| Favicons |======================-->
+    <link rel="icon" type="image/x-icon" href="../assets/favicons/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicons/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicons/apple-touch-icon.png" />
+    <link rel="manifest" href="assets/favicons/site.webmanifest" />
+
+    <!--======================| Fontes |======================-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;600;700&display=swap" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+
+    <!--======================| Ícones |======================-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <!--======================| CSS |======================-->
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <!--======================| Menu |======================-->
+    <div id="menu-container"></div>
+
+    <script src="../js/menu-mobile.js" defer></script>
+
+    <script>
+      fetch("../components/menu.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("menu-container").innerHTML = data;
+
+          iniciarMenu();
+        });
+    </script>
+    <!--======================| Menu |======================-->
+
+    <!--======================| Projetos |======================-->
+    <section class="projetos">
+      <div class="container">
+        <div class="projetos-header reveal reveal-premium">
+          <header class="reveal reveal-premium">
+            <h2>Projetos</h2>
+          </header>
+          <p class="tag">Portfólio</p>
+
+          <p>Alguns dos projetos que desenvolvi, focados em performance, design moderno e soluções reais.</p>
+        </div>
+
+        <div class="projetos-grid">
+          <article class="projeto-card reveal reveal-premium">
+            <div class="projeto-img">
+              <img src="assets/trc.png" loading="lazy" alt="Projeto 1" />
+            </div>
+
+            <div class="projeto-content">
+              <h3>Transportador Catarinense</h3>
+
+              <p>Plataforma institucional para empresa de transporte rodoviário, com foco em captação de clientes e performance.</p>
+
+              <div class="techs">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>React</span>
+              </div>
+
+              <div class="projeto-actions">
+                <a href="#" class="btn-demo">Ver Projeto</a>
+                <a href="#" class="btn-code">Código</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="projeto-card reveal reveal-premium">
+            <div class="projeto-img">
+              <img src="assets/madelog.png" loading="lazy" alt="Projeto 2" />
+            </div>
+
+            <div class="projeto-content">
+              <h3>Madelog</h3>
+
+              <p>Plataforma institucional desenvolvida para a madeireira Madelog, com foco na apresentação de serviços, valorização da qualidade da madeira e captação de clientes.</p>
+
+              <div class="techs">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>OMS</span>
+                <span>React</span>
+              </div>
+
+              <div class="projeto-actions">
+                <a href="#" class="btn-demo">Ver Projeto</a>
+                <a href="#" class="btn-code">Código</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="projeto-card reveal reveal-premium">
+            <div class="projeto-img">
+              <img src="assets/madeiragest.png" loading="lazy" alt="Projeto 3" />
+            </div>
+
+            <div class="projeto-content">
+              <h3>MadeiraGest</h3>
+
+              <p>Sistema web CRUD desenvolvido para gestão de operações da Madeiragest, com foco no controle de cadastros, organização de dados e eficiência nos processos internos.</p>
+
+              <div class="techs">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Node.js</span>
+                <span>Express</span>
+                <span>MySQL</span>
+              </div>
+
+              <div class="projeto-actions">
+                <a href="#" class="btn-demo">Ver Projeto</a>
+                <a href="#" class="btn-code">Código</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!--======================| Projetos |======================-->
+
+    <!--======================| Rodapé |======================-->
+    <div id="rodape"></div>
+
+    <script>
+      fetch("../components/rodape.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("rodape").innerHTML = data;
+        })
+        .catch((error) => console.error("Erro ao carregar o rodapé:", error));
+    </script>
+    <!--======================| Rodapé |======================-->
+
+    <!--======================| Background |======================-->
+    <script src="../js/bg.js" defer></script>
+
+    <!--======================| Efeito Rolagem |======================-->
+    <script src="../js/roll.js" defer></script>
+
+    <!--======================| Efeito Rolagem |======================-->
+    <script src="../js/fade.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!--======================| Base |======================-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Certificações | Tiago Vieira</title>
+
+    <!--======================| SEO |======================-->
+    <meta
+      name="description"
+      content="Veja as certificações de Tiago Vieira, desenvolvedor full stack. Formação em tecnologia, cursos e qualificações voltadas ao desenvolvimento web e sistemas."
+    />
+    <meta name="author" content="Tiago Vieira" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://tiagovieira.dev.br/pages/certificacoes.html" />
+
+    <!--======================| SEO Estruturado |======================-->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Tiago Vieira",
+        "url": "https://tiagovieira.dev.br",
+        "jobTitle": "Desenvolvedor Full Stack",
+        "image": "https://tiagovieira.dev.br/assets/perfil.jpg",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Lages",
+          "addressRegion": "SC",
+          "addressCountry": "BR"
+        },
+        "sameAs": ["https://github.com/tiagovieira-dev", "https://www.linkedin.com/in/tiago-vieira-0540531aa/"]
+      }
+    </script>
+
+    <!--======================| Open Graph (Facebook/WhatsApp) |======================-->
+    <meta property="og:title" content="Certificações | Tiago Vieira" />
+    <meta property="og:description" content="Conheça minhas certificações e qualificações em desenvolvimento web, tecnologia e sistemas." />
+    <meta property="og:image" content="https://tiagovieira.dev.br/assets/preview-certificacoes.jpg" />
+    <meta property="og:url" content="https://tiagovieira.dev.br/pages/certificacoes.html" />
+    <meta property="og:type" content="website" />
+
+    <!--======================| Twitter Card |======================-->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Tiago Vieira | Desenvolvedor Full Stack" />
+    <meta name="twitter:description" content="Sites profissionais e sistemas web sob medida." />
+    <meta name="twitter:image" content="https://seudominio.com/img/preview.jpg" />
+
+    <!--======================| Tema Mobile |======================-->
+    <meta name="theme-color" content="#023F89" />
+
+    <!--======================| Favicons |======================-->
+    <link rel="icon" type="image/x-icon" href="../assets/favicons/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicons/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicons/apple-touch-icon.png" />
+    <link rel="manifest" href="assets/favicons/site.webmanifest" />
+
+    <!--======================| Fontes |======================-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;600;700&display=swap" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+
+    <!--======================| Ícones |======================-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <!--======================| CSS |======================-->
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <!--======================| Menu |======================-->
+    <div id="menu-container"></div>
+
+    <script src="../js/menu-mobile.js" defer></script>
+
+    <script>
+      fetch("../components/menu.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("menu-container").innerHTML = data;
+
+          iniciarMenu();
+        });
+    </script>
+    <!--======================| Menu |======================-->
+
+    <!--======================| Serviços |======================-->
+    <section class="servicos">
+      <div class="container">
+        <header class="reveal reveal-premium">
+          <h2>Serviços</h2>
+        </header>
+
+        <p class="tag">Soluções Digitais</p>
+
+        <p class="servicos-sub">Desenvolvimento de soluções modernas focadas em performance, escalabilidade e resultados reais para o seu negócio.</p>
+
+        <div class="servicos-grid">
+          <div class="servico reveal reveal-premium">
+            <h3>Desenvolvimento de Sites Profissionais</h3>
+            <p>Criação de sites institucionais modernos, rápidos e responsivos, pensados para gerar credibilidade, atrair clientes e aumentar sua presença online.</p>
+            <ul>
+              <li>Design moderno e personalizado</li>
+              <li>Alta performance e carregamento rápido</li>
+              <li>Otimizado para SEO</li>
+            </ul>
+          </div>
+
+          <div class="servico reveal reveal-premium">
+            <h3>Sistemas Web Sob Medida</h3>
+            <p>Desenvolvimento de sistemas personalizados para automatizar processos, organizar dados e aumentar a eficiência da sua empresa.</p>
+            <ul>
+              <li>CRUD completo e dashboards</li>
+              <li>Integração com banco de dados</li>
+              <li>Escalável e seguro</li>
+            </ul>
+          </div>
+
+          <div class="servico reveal reveal-premium">
+            <h3>Otimização e Performance</h3>
+            <p>Melhoria de velocidade, estrutura e desempenho do seu site para oferecer melhor experiência ao usuário e melhor posicionamento no Google.</p>
+            <ul>
+              <li>Melhoria no tempo de carregamento</li>
+              <li>Boas práticas de SEO técnico</li>
+              <li>Melhoria no Lighthouse</li>
+            </ul>
+          </div>
+
+          <div class="servico reveal reveal-premium">
+            <h3>Manutenção e Suporte</h3>
+            <p>Atualizações, correções e melhorias contínuas para garantir que seu sistema ou site funcione sempre com segurança e estabilidade.</p>
+            <ul>
+              <li>Correção de bugs</li>
+              <li>Atualizações constantes</li>
+              <li>Suporte técnico</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="servicos-cta reveal reveal-premium">
+          <div class="cta-content">
+            <h3>Pronto para levar seu projeto para o próximo nível?</h3>
+            <p>Desenvolvo soluções digitais sob medida, com foco em performance, design moderno e resultados reais para o seu negócio.</p>
+
+            <a href="#contato" class="btn-cta">Solicitar orçamento</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--======================| Serviços |======================-->
+
+    <!--======================| Rodapé |======================-->
+    <div id="rodape"></div>
+
+    <script>
+      fetch("../components/rodape.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("rodape").innerHTML = data;
+        })
+        .catch((error) => console.error("Erro ao carregar o rodapé:", error));
+    </script>
+    <!--======================| Rodapé |======================-->
+
+    <!--======================| Background |======================-->
+    <script src="../js/bg.js" defer></script>
+
+    <!--======================| Efeito Rolagem |======================-->
+    <script src="../js/roll.js" defer></script>
+
+    <!--======================| Efeito Rolagem |======================-->
+    <script src="../js/fade.js" defer></script>
+  </body>
+</html>

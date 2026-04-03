@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!--======================| Base |======================-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Certificações | Tiago Vieira</title>
+
+    <!--======================| SEO |======================-->
+    <meta
+      name="description"
+      content="Veja as certificações de Tiago Vieira, desenvolvedor full stack. Formação em tecnologia, cursos e qualificações voltadas ao desenvolvimento web e sistemas."
+    />
+    <meta name="author" content="Tiago Vieira" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://tiagovieira.dev.br/pages/certificacoes.html" />
+
+    <!--======================| SEO Estruturado |======================-->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Tiago Vieira",
+        "url": "https://tiagovieira.dev.br",
+        "jobTitle": "Desenvolvedor Full Stack",
+        "image": "https://tiagovieira.dev.br/assets/perfil.jpg",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Lages",
+          "addressRegion": "SC",
+          "addressCountry": "BR"
+        },
+        "sameAs": ["https://github.com/tiagovieira-dev", "https://www.linkedin.com/in/tiago-vieira-0540531aa/"]
+      }
+    </script>
+
+    <!--======================| Open Graph (Facebook/WhatsApp) |======================-->
+    <meta property="og:title" content="Certificações | Tiago Vieira" />
+    <meta property="og:description" content="Conheça minhas certificações e qualificações em desenvolvimento web, tecnologia e sistemas." />
+    <meta property="og:image" content="https://tiagovieira.dev.br/assets/preview-certificacoes.jpg" />
+    <meta property="og:url" content="https://tiagovieira.dev.br/pages/certificacoes.html" />
+    <meta property="og:type" content="website" />
+
+    <!--======================| Twitter Card |======================-->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Tiago Vieira | Desenvolvedor Full Stack" />
+    <meta name="twitter:description" content="Sites profissionais e sistemas web sob medida." />
+    <meta name="twitter:image" content="https://seudominio.com/img/preview.jpg" />
+
+    <!--======================| Tema Mobile |======================-->
+    <meta name="theme-color" content="#023F89" />
+
+    <!--======================| Favicons |======================-->
+    <link rel="icon" type="image/x-icon" href="../assets/favicons/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicons/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicons/apple-touch-icon.png" />
+    <link rel="manifest" href="assets/favicons/site.webmanifest" />
+
+    <!--======================| Fontes |======================-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;600;700&display=swap" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+
+    <!--======================| Ícones |======================-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <!--======================| CSS |======================-->
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <!--======================| Menu |======================-->
+    <div id="menu-container"></div>
+
+    <script src="../js/menu-mobile.js" defer></script>
+
+    <script>
+      fetch("../components/menu.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("menu-container").innerHTML = data;
+
+          iniciarMenu();
+        });
+    </script>
+    <!--======================| Menu |======================-->
+
+    <!--======================| Contatos |======================-->
+    <section class="contatos">
+      <div class="container">
+        <header class="reveal reveal-premium">
+          <h2>Contato</h2>
+        </header>
+        <p class="tag">Entre em contato</p>
+
+        <p class="contato-desc">Tem um projeto em mente ou precisa de um site profissional? Entre em contato e vamos conversar.</p>
+
+        <div class="contato-wrapper">
+          <form action="https://formspree.io/f/SEU_ID_AQUI" method="POST" class="form-contato reveal reveal-premium">
+            <div class="input-group">
+              <input type="text" name="nome" required />
+              <label>Seu nome</label>
+            </div>
+
+            <div class="input-group">
+              <input type="email" name="email" required />
+              <label>Seu e-mail</label>
+            </div>
+
+            <div class="input-group">
+              <textarea name="mensagem" rows="5" required></textarea>
+              <label>Mensagem</label>
+            </div>
+
+            <button type="submit" class="btn-contato">Enviar mensagem</button>
+          </form>
+
+          <div class="contato-info reveal reveal-premium">
+            <h3>Fale comigo</h3>
+            <p class="contato-status">🟢 Disponível para projetos</p>
+            <p class="contato-desc">Estou disponível para novos projetos, freelas ou oportunidades. Respondo rápido e sem compromisso.</p>
+
+            <div class="contato-lista">
+              <a href="tel:+5549999981782" class="contato-item">
+                <span class="icon">📞</span>
+                <div>
+                  <strong>Whatsapp</strong>
+                  <p>(49) 99998-1782</p>
+                </div>
+              </a>
+
+              <a href="mailto:tiagoseinfert@gmail.com" class="contato-item">
+                <span class="icon">✉️</span>
+                <div>
+                  <strong>Email</strong>
+                  <p>tiagoseinfert@gmail.com</p>
+                </div>
+              </a>
+
+              <a href="https://github.com/tiagovieira-dev" target="_blank" rel="noopener noreferrer" aria-label="Perfil no GitHub de Tiago Vieira" class="contato-item">
+                <span class="icon">💻</span>
+                <div>
+                  <strong>GitHub</strong>
+                  <p>/tiagovieira-dev</p>
+                </div>
+              </a>
+
+              <a href="https://www.linkedin.com/in/tiago-vieira-0540531aa/" target="_blank" rel="noopener noreferrer" aria-label="Perfil no LinkedIn de Tiago Vieira" class="contato-item">
+                <span class="icon">🔗</span>
+                <div>
+                  <strong>LinkedIn</strong>
+                  <p>Conecte-se comigo</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--======================| Contatos |======================-->
+
+    <!--======================| CTA |======================-->
+    <section class="cta-final">
+      <div class="container">
+        <div class="cta-final-box reveal">
+          <div class="cta-content">
+            <h3>Vamos transformar sua presença digital?</h3>
+
+            <p>Crio sites e sistemas modernos, rápidos e estratégicos para posicionar seu negócio de forma profissional e gerar resultados reais.</p>
+
+            <a href="pages/contatos.html" class="btn-cta">Solicitar orçamento</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--======================| CTA |======================-->
+
+    <!--======================| Rodapé |======================-->
+    <div id="rodape"></div>
+
+    <script>
+      fetch("../components/rodape.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("rodape").innerHTML = data;
+        })
+        .catch((error) => console.error("Erro ao carregar o rodapé:", error));
+    </script>
+    <!--======================| Rodapé |======================-->
+
+    <!--======================| Background |======================-->
+    <script src="../js/bg.js" defer></script>
+
+    <!--======================| Efeito Rolagem |======================-->
+    <script src="../js/roll.js" defer></script>
+
+    <!--======================| Efeito Rolagem |======================-->
+    <script src="../js/fade.js" defer></script>
+  </body>
+</html>
