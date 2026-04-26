@@ -3,13 +3,13 @@
     <div class="nav-container">
       <h1 class="logo"><a href="index.html" data-route="index.html">Tiago Vieira</a></h1>
 
-      <div class="menu-toggle" id="menu-toggle" role="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu" tabindex="0">
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
         <span></span>
         <span></span>
         <span></span>
-      </div>
+      </button>
 
-      <ul class="menu" id="menu">
+      <ul class="menu-desktop">
         <li><a href="index.html" data-route="index.html">Home</a></li>
         <li><a href="pages/servicos.html" data-route="pages/servicos.html">Serviços</a></li>
         <li><a href="pages/projetos.html" data-route="pages/projetos.html">Projetos</a></li>
@@ -20,5 +20,16 @@
       </ul>
     </div>
   </nav>
+  <aside class="menu-mobile-panel" id="mobile-menu" aria-hidden="true">
+    <ul class="menu-mobile-links">
+      <li><a href="index.html" data-route="index.html">Home</a></li>
+      <li><a href="pages/servicos.html" data-route="pages/servicos.html">Serviços</a></li>
+      <li><a href="pages/projetos.html" data-route="pages/projetos.html">Projetos</a></li>
+      <li><a href="pages/sobre.html" data-route="pages/sobre.html">Sobre</a></li>
+      <li><a href="pages/habilidades.html" data-route="pages/habilidades.html">Habilidades</a></li>
+      <li><a href="pages/certificacoes.html" data-route="pages/certificacoes.html">Certificações</a></li>
+      <li><a href="pages/contatos.html" data-route="pages/contatos.html">Contatos</a></li>
+    </ul>
+  </aside>
   <div class="menu-backdrop" id="menu-backdrop" aria-hidden="true"></div>
 </header>

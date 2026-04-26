@@ -1,11 +1,13 @@
 function iniciarMenu() {
   const toggle = document.querySelector("#menu-toggle");
-  const menu = document.querySelector(".menu");
-  const menuLinks = document.querySelectorAll(".menu a");
+  const mobileMenu = document.querySelector("#mobile-menu");
+  const desktopLinks = document.querySelectorAll(".menu-desktop a");
+  const mobileLinks = document.querySelectorAll(".menu-mobile-links a");
   const logoLink = document.querySelector(".logo a");
   const backdrop = document.querySelector("#menu-backdrop");
+  const allLinks = [...desktopLinks, ...mobileLinks];
 
-  if (!toggle || !menu) {
+  if (!toggle || !mobileMenu) {
     console.error("Menu ou botão não encontrado");
     return;
   }
@@ -19,14 +21,14 @@ function iniciarMenu() {
     logoLink.href = `${routePrefix}${logoLink.dataset.route}`;
   }
 
-  menuLinks.forEach((link) => {
+  allLinks.forEach((link) => {
     if (link.dataset.route) {
       link.href = `${routePrefix}${link.dataset.route}`;
     }
   });
 
   // Define o item ativo conforme a rota atual.
-  menuLinks.forEach((link) => {
+  allLinks.forEach((link) => {
     link.removeAttribute("aria-current");
     const linkPath = new URL(link.href, window.location.origin).pathname.replace(/\/+$/, "");
 
@@ -36,21 +38,23 @@ function iniciarMenu() {
   });
 
   const closeMenu = () => {
-    menu.classList.remove("active");
+    mobileMenu.classList.remove("active");
     toggle.classList.remove("active");
     toggle.setAttribute("aria-expanded", "false");
+    mobileMenu.setAttribute("aria-hidden", "true");
     document.body.classList.remove("menu-open");
   };
 
   const openMenu = () => {
-    menu.classList.add("active");
+    mobileMenu.classList.add("active");
     toggle.classList.add("active");
     toggle.setAttribute("aria-expanded", "true");
+    mobileMenu.setAttribute("aria-hidden", "false");
     document.body.classList.add("menu-open");
   };
 
   const toggleMenu = () => {
-    if (menu.classList.contains("active")) {
+    if (mobileMenu.classList.contains("active")) {
       closeMenu();
       return;
     }
@@ -68,7 +72,7 @@ function iniciarMenu() {
     }
   });
 
-  menuLinks.forEach((link) => {
+  mobileLinks.forEach((link) => {
     link.addEventListener("click", () => {
       closeMenu();
     });
