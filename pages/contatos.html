@@ -92,7 +92,7 @@
     <section class="contatos contatos-pagina">
       <div class="container">
         <header class="reveal reveal-premium">
-          <h2>Contato</h2>
+          <h1>Contato</h1>
           <p class="tag">Vamos conversar</p>
         </header>
 
@@ -137,9 +137,9 @@
           </div>
 
           <div class="contato-wrapper">
-            <form action="https://formspree.io/f/SEU_ID_AQUI" method="POST" class="form-contato reveal reveal-premium">
+            <form action="https://formspree.io/f/xwleaqdv" method="POST" class="form-contato reveal reveal-premium" id="formulario">
               <div class="form-contato-header">
-                <h4>Solicitar orçamento</h4>
+                <h3>Solicitar orçamento</h3>
                 <p>Preencha os campos abaixo e retorno com uma proposta alinhada ao seu objetivo.</p>
               </div>
 
@@ -159,6 +159,7 @@
               </div>
 
               <button type="submit" class="btn-contato">Enviar mensagem<span class="btn-cta-arrow" aria-hidden="true">→</span></button>
+              <p class="form-status" role="status" aria-live="polite" hidden></p>
             </form>
 
             <div class="contato-info reveal reveal-premium">
@@ -284,11 +285,30 @@
     <section class="cta-final">
       <div class="container">
         <div class="cta-final-box reveal">
-          <div class="cta-content">
-            <span class="cta-eyebrow">Atendimento direto</span>
-            <h3>Prefere resolver agora?</h3>
-            <p>Chame no WhatsApp e receba retorno rápido para tirar dúvidas, alinhar escopo ou solicitar orçamento.</p>
-            <a href="https://wa.me/49999981782" class="btn-cta btn-cta--whatsapp" target="_blank" rel="noopener noreferrer">Iniciar conversa<span class="btn-cta-arrow" aria-hidden="true">→</span></a>
+          <div class="cta-panel">
+            <div class="cta-content">
+              <span class="cta-eyebrow">Resposta rápida</span>
+              <h3>Prefere resolver agora, sem formulário?</h3>
+              <p>Chama no WhatsApp com uma linha sobre o que precisa. Eu retorno com as perguntas certas — e, se fechar, com a proposta.</p>
+              <ul class="cta-chips">
+                <li>Atendimento direto</li>
+                <li>Sem burocracia</li>
+                <li>Retorno em até 24h</li>
+              </ul>
+              <div class="cta-actions">
+                <a href="https://wa.me/49999981782" class="btn-cta btn-cta--whatsapp" target="_blank" rel="noopener noreferrer">Abrir WhatsApp<span class="btn-cta-arrow" aria-hidden="true">→</span></a>
+                <a href="#formulario" class="btn-cta btn-cta--ghost">Usar o formulário<span class="btn-cta-arrow" aria-hidden="true">→</span></a>
+              </div>
+            </div>
+            <aside class="cta-aside">
+              <p class="cta-aside-label">Uma mensagem boa inclui</p>
+              <ul>
+                <li>O que você quer no ar</li>
+                <li>Se já tem site ou material</li>
+                <li>Prazo aproximado</li>
+                <li>Como prefere o retorno</li>
+              </ul>
+            </aside>
           </div>
         </div>
       </div>
@@ -313,5 +333,6 @@
 
     <!--======================| Efeito Rolagem |======================-->
     <script src="../js/fade.js" defer></script>
+    <script src="../js/form.js" defer></script>
   </body>
 </html>
