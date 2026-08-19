@@ -28,7 +28,7 @@
 
 :root {
   --section-spacing: 60px;
-  --section-spacing-mobile: 30px 10px;
+  --section-spacing-mobile: 36px 0;
 }
 
 section {
@@ -860,7 +860,7 @@ section > .container > *:last-child {
 /*Serviços*/
 .servicos-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
   gap: 40px;
 }
 
@@ -1974,7 +1974,7 @@ section > .container > *:last-child {
 }
 
 .servicos-pagina .servicos-grid {
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 22px;
   margin-bottom: 48px;
 }
@@ -3172,7 +3172,7 @@ section > .container > *:last-child {
 
 /* Serviços home */
 .home-pagina .servicos-grid {
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 22px;
   margin-bottom: 48px;
 }
@@ -3519,8 +3519,21 @@ section > .container > *:last-child {
   }
 
   .home-hero-stats {
-    grid-template-columns: 1fr;
-    max-width: 280px;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 100%;
+    gap: 8px;
+  }
+
+  .home-hero-stats article {
+    padding: 10px 6px;
+  }
+
+  .home-hero-stats strong {
+    font-size: 1.05rem;
+  }
+
+  .home-hero-stats span {
+    font-size: 0.62rem;
   }
 
   .home-pagina .hero {
@@ -3659,7 +3672,7 @@ section > .container > *:last-child {
 
 @media (max-width: 768px) {
   .container {
-    padding: 40px 15px;
+    padding: 0 16px;
   }
 
   .sobre-mim .cards,
@@ -3671,13 +3684,8 @@ section > .container > *:last-child {
     margin-bottom: 40px;
   }
 
-  .bloco:first-of-type,
   .timeline {
     padding-left: 20px;
-  }
-
-  .bloco:first-of-type .card::before {
-    left: -18px;
   }
 
   .timeline-item {
@@ -4731,5 +4739,145 @@ footer a:focus-visible,
 
   .projeto-card:hover .projeto-img img {
     transform: none;
+  }
+}
+
+@media (max-width: 768px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  img,
+  svg,
+  video,
+  canvas {
+    max-width: 100%;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    overflow-wrap: break-word;
+  }
+
+  .home-pagina .container,
+  .sobre-pagina .container,
+  .servicos-pagina .container,
+  .projetos-pagina .container,
+  .habilidades-pagina .container,
+  .certificacoes-pagina .container,
+  .contatos-pagina .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .home-pagina {
+    --home-section-space: 56px;
+  }
+
+  .home-pagina .servicos-grid,
+  .servicos-pagina .servicos-grid,
+  .servicos-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .servico,
+  .home-pagina .servico,
+  .servicos-pagina .servico {
+    min-width: 0;
+    padding: 20px 18px;
+  }
+
+  .servico h4 {
+    font-size: 1.05rem;
+  }
+
+  .servico p,
+  .servico li {
+    font-size: 0.88rem;
+  }
+
+  .cta-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .cta-actions .btn-cta {
+    width: 100%;
+  }
+
+  .cta-chips li {
+    font-size: 0.72rem;
+    padding: 5px 10px;
+  }
+
+  .cta-aside {
+    padding: 18px;
+  }
+
+  .cta-final {
+    padding: 24px 0 48px;
+    margin-top: 24px;
+  }
+
+  .home-pagina .cta-final {
+    padding: 8px 0 48px;
+  }
+
+  .home-pagina .botoes-inicio {
+    width: 100%;
+    max-width: 360px;
+  }
+
+  .home-pagina .botoes-inicio .btn-inicio {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .destaque-row,
+  .sobre-pilares,
+  .home-pagina .sobre-pilares,
+  .sobre-processo,
+  .home-pagina .sobre-processo {
+    grid-template-columns: 1fr;
+  }
+
+  .fluxo-item {
+    padding: 18px 16px;
+  }
+
+  .servicos-hero,
+  .projetos-hero,
+  .habilidades-hero,
+  .certificacoes-hero,
+  .contatos-hero,
+  .sobre-hero {
+    padding: 24px 18px;
+    margin-bottom: 32px;
+  }
+
+  .contato-wrapper {
+    gap: 20px;
+  }
+
+  .projeto-actions {
+    flex-wrap: wrap;
+  }
+
+  .projeto-actions a {
+    flex: 1 1 140px;
+    min-width: 0;
+    text-align: center;
+  }
+
+  .cert-header {
+    flex-wrap: wrap;
+  }
+
+  .cert-header img {
+    max-width: 120px;
   }
 }
