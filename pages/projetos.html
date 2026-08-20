@@ -4,7 +4,7 @@
     <!--======================| Base |======================-->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projetos | Tiago Vieira</title>
+    <title>Projetos | Tiago Vieira Dev</title>
 
     <!--======================| SEO |======================-->
     <meta
@@ -21,21 +21,31 @@
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Tiago Vieira",
-        "url": "https://tiagovieira.dev.br",
+        "alternateName": ["Tiago Vieira Dev", "Tiago Vieira Desenvolvedor"],
+        "url": "https://tiagovieira.dev.br/",
         "jobTitle": "Desenvolvedor Full Stack",
+        "description": "Desenvolvedor full stack e analista de sistemas em Lages, SC.",
         "image": "https://tiagovieira.dev.br/assets/perfil.jpg",
+        "email": "mailto:tiagoseinfert@gmail.com",
+        "telephone": "+55-49-99998-1782",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Lages",
           "addressRegion": "SC",
           "addressCountry": "BR"
         },
-        "sameAs": ["https://github.com/tiagovieira-dev", "https://www.linkedin.com/in/tiago-vieira-0540531aa/"]
+        "sameAs": [
+          "https://github.com/tiagovieira-dev",
+          "https://www.linkedin.com/in/tiago-vieira-0540531aa/",
+          "https://www.instagram.com/tiago_ngc/"
+        ]
       }
     </script>
 
     <!--======================| Open Graph (Facebook/WhatsApp) |======================-->
-    <meta property="og:title" content="Projetos | Tiago Vieira" />
+    <meta property="og:site_name" content="Tiago Vieira Dev" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:title" content="Projetos | Tiago Vieira Dev" />
     <meta property="og:description" content="Portfólio de projetos web desenvolvidos com foco em qualidade visual, usabilidade e resultados." />
     <meta property="og:image" content="https://tiagovieira.dev.br/assets/preview-certificacoes.jpg" />
     <meta property="og:url" content="https://tiagovieira.dev.br/pages/projetos.html" />
@@ -43,7 +53,7 @@
 
     <!--======================| Twitter Card |======================-->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Projetos | Tiago Vieira" />
+    <meta name="twitter:title" content="Projetos | Tiago Vieira Dev" />
     <meta name="twitter:description" content="Projetos desenvolvidos com foco em performance, design moderno e soluções reais." />
     <meta name="twitter:image" content="https://tiagovieira.dev.br/assets/preview-certificacoes.jpg" />
 
@@ -94,81 +104,114 @@
         </header>
 
         <div class="projetos-hero reveal reveal-premium">
-          <p class="projetos-hero-eyebrow">Cases reais de desenvolvimento web</p>
-          <h3 class="projetos-hero-titulo">Projetos pensados para converter, performar e escalar</h3>
+          <p class="projetos-hero-eyebrow">Cases reais — não mockup de curso</p>
+          <h3 class="projetos-hero-titulo">Sites e sistemas feitos para quem usa no dia a dia</h3>
           <p class="projetos-intro">
-            Seleção de trabalhos desenvolvidos com foco em design moderno, performance, usabilidade e soluções digitais alinhadas aos objetivos de cada negócio.
+            Três trabalhos com problema definido: vitrine de empresa, operação madeireira e gestão interna. Cada um com stack objetiva, interface navegável e código que dá para manter.
           </p>
           <div class="projetos-hero-meta">
-            <span>Sites institucionais</span>
-            <span>Sistemas web</span>
-            <span>UI responsiva</span>
-            <span>SEO técnico</span>
+            <span>Institucional</span>
+            <span>CRUD em produção</span>
+            <span>React quando cabe</span>
+            <span>Node + banco</span>
           </div>
         </div>
 
         <div class="sobre-stats reveal reveal-premium" aria-label="Indicadores do portfólio">
           <article class="sobre-stat">
-            <strong>3+</strong>
-            <span>Projetos entregues</span>
+            <strong>3</strong>
+            <span>Cases no ar / em uso</span>
+          </article>
+          <article class="sobre-stat">
+            <strong>2</strong>
+            <span>Sites institucionais</span>
+          </article>
+          <article class="sobre-stat">
+            <strong>1</strong>
+            <span>Sistema CRUD</span>
           </article>
           <article class="sobre-stat">
             <strong>100%</strong>
             <span>Layout responsivo</span>
           </article>
-          <article class="sobre-stat">
-            <strong>Fast</strong>
-            <span>Performance otimizada</span>
-          </article>
-          <article class="sobre-stat">
-            <strong>Full</strong>
-            <span>Stack moderna</span>
-          </article>
         </div>
 
         <div class="sobre-secao reveal reveal-premium">
           <p class="tag">Cases</p>
-          <h3>Projetos em destaque</h3>
-          <p class="sobre-secao-desc">Cada projeto combina estratégia visual, arquitetura sólida e execução técnica orientada a resultado.</p>
+          <h3>O que foi construído — e por quê</h3>
+          <p class="sobre-secao-desc">Não é galeria de screenshot. É o recorte do problema, da stack e do que a empresa passou a ter na tela.</p>
         </div>
 
-        <div class="projetos-grid">
-          <article class="projeto-card reveal reveal-premium">
-            <div class="projeto-img">
-              <span class="projeto-tag">Institucional</span>
+        <div class="projetos-lista">
+          <article class="projeto-case reveal reveal-premium" id="trc">
+            <div class="projeto-case-media">
+              <span class="projeto-tag">01 · Institucional</span>
               <img src="../assets/trc.png" loading="lazy" alt="Screenshot do site Transportador Catarinense" />
             </div>
-
-            <div class="projeto-content">
+            <div class="projeto-case-body">
               <span class="projeto-tipo">Transporte rodoviário</span>
               <h4>Transportador Catarinense</h4>
-              <p>Plataforma institucional para empresa de transporte rodoviário, com foco em captação de clientes, credibilidade e performance.</p>
-
+              <p>Empresa de transporte precisava de presença digital à altura da operação — não uma página genérica. O site posiciona a marca, deixa o serviço claro e abre caminho para o cliente chamar.</p>
+              <dl class="projeto-fatos">
+                <div>
+                  <dt>Papel</dt>
+                  <dd>Front-end</dd>
+                </div>
+                <div>
+                  <dt>Formato</dt>
+                  <dd>Site institucional</dd>
+                </div>
+                <div>
+                  <dt>Foco</dt>
+                  <dd>Credibilidade e captação</dd>
+                </div>
+              </dl>
+              <ul class="projeto-entregas">
+                <li>Layout responsivo com hierarquia clara de serviço e contato</li>
+                <li>Páginas pensadas para quem pesquisa transporte, não só para “ficar bonito”</li>
+                <li>Base em HTML, CSS, JavaScript e React no que a interface pedia</li>
+              </ul>
               <div class="techs">
                 <span>HTML</span>
                 <span>CSS</span>
                 <span>JavaScript</span>
                 <span>React</span>
               </div>
-
               <div class="projeto-actions">
-                <a href="#" class="btn-demo">Ver Projeto</a>
+                <a href="#" class="btn-demo">Ver projeto</a>
                 <a href="#" class="btn-code">Código</a>
               </div>
             </div>
           </article>
 
-          <article class="projeto-card reveal reveal-premium">
-            <div class="projeto-img">
-              <span class="projeto-tag">Institucional</span>
+          <article class="projeto-case projeto-case--invert reveal reveal-premium" id="madelog">
+            <div class="projeto-case-media">
+              <span class="projeto-tag">02 · Institucional</span>
               <img src="../assets/madelog.png" loading="lazy" alt="Screenshot do site Madelog Madeireira" />
             </div>
-
-            <div class="projeto-content">
+            <div class="projeto-case-body">
               <span class="projeto-tipo">Indústria madeireira</span>
               <h4>Madelog</h4>
-              <p>Plataforma institucional para madeireira, com foco na apresentação de serviços, valorização da qualidade da madeira e captação de clientes.</p>
-
+              <p>Madeireira que precisava mostrar produto, qualidade e forma de comprar sem depender só de indicação. O site organiza serviços, reforça a madeira como diferencial e conduz o visitante ao contato.</p>
+              <dl class="projeto-fatos">
+                <div>
+                  <dt>Papel</dt>
+                  <dd>Front-end</dd>
+                </div>
+                <div>
+                  <dt>Formato</dt>
+                  <dd>Vitrine institucional</dd>
+                </div>
+                <div>
+                  <dt>Foco</dt>
+                  <dd>Catálogo e conversão</dd>
+                </div>
+              </dl>
+              <ul class="projeto-entregas">
+                <li>Apresentação de serviços e qualidade da madeira em linguagem direta</li>
+                <li>Estrutura pronta para conteúdo institucional e captação</li>
+                <li>Interface em HTML, CSS, JavaScript e React, com OMS no fluxo de conteúdo</li>
+              </ul>
               <div class="techs">
                 <span>HTML</span>
                 <span>CSS</span>
@@ -176,25 +219,41 @@
                 <span>OMS</span>
                 <span>React</span>
               </div>
-
               <div class="projeto-actions">
-                <a href="#" class="btn-demo">Ver Projeto</a>
+                <a href="#" class="btn-demo">Ver projeto</a>
                 <a href="#" class="btn-code">Código</a>
               </div>
             </div>
           </article>
 
-          <article class="projeto-card reveal reveal-premium">
-            <div class="projeto-img">
-              <span class="projeto-tag">Sistema web</span>
+          <article class="projeto-case reveal reveal-premium" id="madeiragest">
+            <div class="projeto-case-media">
+              <span class="projeto-tag">03 · Sistema web</span>
               <img src="../assets/madeiragest.png" loading="lazy" alt="Screenshot do sistema MadeiraGest" />
             </div>
-
-            <div class="projeto-content">
+            <div class="projeto-case-body">
               <span class="projeto-tipo">Gestão operacional</span>
               <h4>MadeiraGest</h4>
-              <p>Sistema web CRUD para gestão de operações, com controle de cadastros, organização de dados e eficiência nos processos internos.</p>
-
+              <p>A operação não cabia em planilha. Desenvolvi um CRUD para cadastros, consultas e rotina interna — e hoje o sistema está em uso, com banco gerenciado no dia a dia, não só no repositório.</p>
+              <dl class="projeto-fatos">
+                <div>
+                  <dt>Papel</dt>
+                  <dd>Full stack</dd>
+                </div>
+                <div>
+                  <dt>Formato</dt>
+                  <dd>Sistema CRUD</dd>
+                </div>
+                <div>
+                  <dt>Foco</dt>
+                  <dd>Operação e dados</dd>
+                </div>
+              </dl>
+              <ul class="projeto-entregas">
+                <li>Cadastros, listagens e manutenção de registros com persistência no banco</li>
+                <li>API em Node.js e Express para a regra de negócio sair da tela</li>
+                <li>MySQL modelado para consulta real — o mesmo tipo de rotina que comando como analista</li>
+              </ul>
               <div class="techs">
                 <span>HTML</span>
                 <span>CSS</span>
@@ -203,9 +262,8 @@
                 <span>Express</span>
                 <span>MySQL</span>
               </div>
-
               <div class="projeto-actions">
-                <a href="#" class="btn-demo">Ver Projeto</a>
+                <a href="#" class="btn-demo">Ver projeto</a>
                 <a href="#" class="btn-code">Código</a>
               </div>
             </div>
@@ -214,28 +272,63 @@
 
         <div class="bloco">
           <div class="sobre-secao reveal reveal-premium">
-            <p class="tag">Leitura do portfólio</p>
-            <h3>O que esses cases têm em comum</h3>
-            <p class="sobre-secao-desc">Não é um processo genérico — é o recorte técnico que você encontra em cada projeto acima.</p>
+            <p class="tag">Leitura dos cases</p>
+            <h3>O que muda de um projeto para o outro</h3>
+            <p class="sobre-secao-desc">Institucional e sistema não pedem a mesma coisa. O recorte abaixo é o critério que aparece nos três trabalhos.</p>
           </div>
 
-          <div class="sobre-processo">
-            <article class="sobre-passo reveal reveal-premium">
+          <div class="destaque-row">
+            <article class="sobre-pilar reveal reveal-premium">
+              <span class="pilar-kicker">Vitrine</span>
+              <h4>Site que explica o negócio</h4>
+              <p>TRC e Madelog: hierarquia, contato e credibilidade. Sem dashboard onde não há login.</p>
+            </article>
+            <article class="sobre-pilar reveal reveal-premium">
+              <span class="pilar-kicker">Operação</span>
+              <h4>Sistema quando há cadastro</h4>
+              <p>MadeiraGest: CRUD, API e banco. Entra backend só quando o dado precisa viver fora da página.</p>
+            </article>
+            <article class="sobre-pilar reveal reveal-premium">
+              <span class="pilar-kicker">Stack</span>
+              <h4>Ferramenta no tamanho certo</h4>
+              <p>React na interface que pede componente. Node e MySQL no fluxo que pede persistência.</p>
+            </article>
+            <article class="sobre-pilar reveal reveal-premium">
+              <span class="pilar-kicker">Uso</span>
+              <h4>Pronto para o dia a dia</h4>
+              <p>Tela que abre no celular, dado que se consulta de novo amanhã, código que outro dev consegue ler.</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="bloco">
+          <div class="sobre-secao reveal reveal-premium">
+            <p class="tag">Antes de começar o seu</p>
+            <h3>O que eu peço para não chutar escopo</h3>
+            <p class="sobre-secao-desc">As mesmas perguntas que separam um site institucional de um CRUD — para a proposta nascer fechada.</p>
+          </div>
+
+          <div class="fluxo-lista">
+            <article class="fluxo-item reveal reveal-premium">
               <span class="sobre-passo-num">1</span>
-              <h4>Problema concreto</h4>
-              <p>Cada case nasce de uma necessidade real: cadastro, operação interna, vitrine ou fluxo que precisava sair do improviso.</p>
+              <div>
+                <h4>Qual problema some se o sistema existir?</h4>
+                <p>Captação, catálogo, controle interno. Se a resposta for vaga, o escopo infla. Se for concreta, o card do case já tem título.</p>
+              </div>
             </article>
-
-            <article class="sobre-passo reveal reveal-premium">
+            <article class="fluxo-item reveal reveal-premium">
               <span class="sobre-passo-num">2</span>
-              <h4>Stack à altura</h4>
-              <p>HTML, CSS, JavaScript, Node e banco entram quando fazem sentido — sem empilhar ferramenta só para encher o card.</p>
+              <div>
+                <h4>Quem abre a tela todo dia?</h4>
+                <p>Cliente final, comercial ou operação. Isso define se o foco é conversão ou cadastro — e se React e banco entram ou não.</p>
+              </div>
             </article>
-
-            <article class="sobre-passo reveal reveal-premium">
+            <article class="fluxo-item reveal reveal-premium">
               <span class="sobre-passo-num">3</span>
-              <h4>Pronto para usar</h4>
-              <p>Interface navegável, dados persistidos quando há CRUD e código organizado o bastante para abrir, entender e evoluir.</p>
+              <div>
+                <h4>O que já existe hoje?</h4>
+                <p>Planilha, Instagram, site antigo ou nada. O MadeiraGest nasceu de rotina real; o institucional, de quem ainda não tinha vitrine à altura.</p>
+              </div>
             </article>
           </div>
         </div>
